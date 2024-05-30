@@ -1,0 +1,139 @@
+/* FONT  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.box-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.image {
+  /* flex: 1; */
+  padding: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+}
+
+.contact-section {
+  /* flex: 1; */
+  padding: 10px;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-inputs label {
+  margin-bottom: 10px;
+}
+
+.contact-input-text {
+  padding: 10px; /* Adjust the padding as needed for spacing */
+  font-size: 1rem; /* Set the font size */
+  margin: 5px; /* Add margin for spacing */
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure the input takes the full width of the container */
+}
+
+.contact-inputs input[type="text"],
+.contact-inputs input[type="email"],
+.contact-inputs textarea {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  margin: 5px;
+}
+
+
+.contact-inputs input[type="submit"] {
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.contact-inputs input[type="submit"]:hover {
+  background-color: #0067cd;
+}
+
+.common-heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+  /* Mobile */
+  @media screen and (max-width: 768px) {
+
+    .box-centre{
+      margin: 15px;
+    }
+
+    .contact-container{
+      flex-direction: column;
+      /* padding: 10px; */
+      margin-bottom: 20px;
+    }
+
+    .contact-section {
+      padding: 5px;
+    }
+  
+    .contact-inputs input[type="text"],
+    .contact-inputs input[type="email"],
+    .contact-inputs textarea {
+      font-size: 0.9rem;
+      /* margin: 9px; */
+    }
+  
+    input[type="submit"] {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.2rem;
+    }
+  }

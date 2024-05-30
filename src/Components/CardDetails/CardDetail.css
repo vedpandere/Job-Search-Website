@@ -1,0 +1,139 @@
+/* FONT  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-img {
+  /* width: 25%; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.box-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-box-content {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin: 2px;
+}
+
+/* h5{
+  font-weight: lighter;
+  font-size: .95rem;
+} */
+
+.company-link {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.company-link:hover {
+  background-color: #3e8e41;
+}
+
+.card-description {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.apply-button {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  transition: all 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #3e8e41;
+}
+
+button {
+  margin-top: 20px;
+  align-self: center;
+  border: none;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover .apply-button {
+  background-color: #3e8e41;
+}
+
+button:hover .company-link {
+  background-color: #3e8e41;
+}
+
+.cardDetail{
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-img {
+    margin-bottom: 20px;
+  }
+
+  .box-img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%; /* Add this line to make the image take the full width */
+  }
+
+  .card-description {
+    margin-top: 20px;
+  }
+}

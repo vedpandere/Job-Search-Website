@@ -1,0 +1,180 @@
+/* FONT */
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&family=Raleway:wght@200;300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+ .home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.home-page {
+  margin-left: 50px;
+}
+
+.home-page h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home-call-to-action h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  margin-top: 20px;
+}
+*/
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #48D1CC;
+  width: 55px;
+  height: 55px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #48D1CC;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ } 
+ 
+
+
+ /* New */
+
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&family=Raleway:wght@200;300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  flex-direction: column; /* Stack content below image on smaller screens */
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack content below image on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Center text content */
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.home-page {
+  margin: 20px 0; /* Adjust margin for better spacing */
+  text-align: center; /* Center text content */
+}
+
+.home-page h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home-call-to-action h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  margin-top: 20px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .home-page h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .home-call-to-action h5 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+    /* Hide the "Get started" text on all pages except the home page */
+    .reponsive-nav .home-button {
+      display: none;
+    }
+}

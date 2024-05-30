@@ -1,0 +1,166 @@
+/* FONT  */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&family=Raleway:wght@200;300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&family=Poppins:wght@200;300;400&family=Raleway:wght@200;300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    
+  }
+  
+  .about-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+  }
+  
+  .about-info p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about-info button{
+    display: inline-block;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .about-info button:hover {
+    background-color: #0056b3;
+  }
+/*  
+
+  .about-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 40px;
+    padding: 30px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.03);
+  }
+
+  .about-container:last-child{
+    margin-bottom: 150px;
+  }
+  
+  .about-image {
+    margin-right: 20px;
+  }
+  
+  .about-content {
+    max-width: 400px;
+  }
+  
+  .about-content h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .about-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-container:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .LinkedIn-Icon {
+    color: #0077B5; /* set the icon color */
+    /* font-size: 2rem; adjust the icon size */
+    /* transition: all 0.3s ease; add a transition effect */
+  /* } */
+
+  /* .LinkedIn-Icon:hover { 
+    color: #0e76a8; /* change the icon color on hover */
+    /* transform: scale(1.2); add a scale effect on hover */
+  /* } */
+  
+   /* New */
+   /* Add your other CSS styles */
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 40px;
+  padding: 30px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.03);
+}
+
+.about-container:last-child {
+  margin-bottom: 150px;
+}
+
+.about-image {
+  margin-right: 20px;
+  flex: 1; /* Distribute available space equally, makes image full-width in mobile view */
+}
+
+.about-content {
+  max-width: 400px;
+  flex: 1; /* Distribute available space equally, makes text full-width in mobile view */
+}
+
+.about-content h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add a media query for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack elements in mobile view */
+    align-items: center; /* Center elements in mobile view */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .about-image, .about-content {
+    margin: 0; /* Remove margin in mobile view */
+  }
+}
